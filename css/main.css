@@ -1,0 +1,371 @@
+/* == ESTILO GENERAL APLICA A TODO == */
+body {
+    background-color: #261132;
+    margin: 0px;
+
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'nav'
+    'main'
+    'footer';
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-template: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+.titulo {
+    color: #261132;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    vertical-align: text-top;
+    font-size: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: #DBDBDB;
+    border-width: 0px 0px 0px 0px;
+    border-style: solid;
+    margin: 0px;
+}
+
+.title {
+    background-color: #DBDBDB;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-width: 0px 0px 0px 0px;
+    border-color: #DBDBDB;
+    border-style: solid;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: #261132;
+    font-weight: bolder;
+    background-color: #DBDBDB;
+    margin: 0px 0px 0px 0px;
+    border-width: 0px 0px 0px 0px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.navegador{
+    background-color: #DBDBDB;
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-width: 0px 0px 0px 0px;
+    border-color: #DBDBDB;
+    border-style: solid;
+}
+
+.navegador ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: #261132;
+    padding: 0 5px 5px 5px;
+    letter-spacing: 0.7px;
+}
+
+.link:hover {
+    color: #7251b5;
+}
+
+.navegador a:before, .navegador a:after {
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #261132;
+    transition: all 0.3s;
+}
+
+.navegador a:before {
+    left: 0px;
+    top: 0px;
+}
+
+.navegador a:after {
+    right: 0px;
+    bottom: 0px;
+}
+
+.navegador a:hover:before, .navegador a:hover:after {
+    opacity: 1;
+    height: 3px;
+    width: 100%;
+}
+
+
+
+.link-redes {
+    text-decoration: none;
+    padding-left: 2px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+}
+.redes {
+    list-style: none;
+    vertical-align: text-bottom;
+    clear: both;
+    color: #DBDBDB;
+    text-decoration: none;
+    background-color: #DBDBDB;
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-width: 0px 0px 0px 0px;
+    justify-content: right;
+}
+
+.icono {
+    width: 50px;
+    height: 50px;
+    padding: 1px;
+}
+
+/* == ESTILO GENERAL APLICA A TODO == */
+
+
+
+/* == STYLE SOLO DE HOME ==*/
+
+.frase {
+    font-family: 'Parisienne', cursive;
+    font-size: 80px;
+    color: #DBDBDB;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    }
+
+.autor {
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    font-size: 30px;
+    color: #DBDBDB;
+    font-weight: bolder;
+    padding-right: 30px;
+}
+
+.home img {
+    width: 1000px;
+    border-radius: 15px;
+    border: 5px solid #DBDBDB;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+}
+
+/* == STYLE SOLO DE HOME ==*/
+
+
+/* == STYLE SOLO DE BIOGRAFIA ==*/
+
+.biografia {
+    display: flex;
+    flex-direction: row;
+}
+
+.foto-bio {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+.foto-bio img {
+    width: 450px;
+    border-radius: 15px;
+    border: 5px solid #DBDBDB;
+}
+
+.bio {
+    margin-right: 20px;
+}
+
+.texto {
+    color:#DBDBDB;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+/* == STYLE SOLO DE HOME ==*/
+
+
+/* == STYLE SOLO DE VIDEOS ==*/
+
+.section-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.video {
+    padding: 5px;
+    border-top: 5px;
+}
+
+/* == STYLE SOLO DE VIDEOS ==*/
+
+
+/* == STYLE SOLO DE CONTACTO ==*/
+
+form {
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    color: #DBDBDB;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 10px;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #DBDBDB;
+}
+
+textarea {
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #DBDBDB;
+    resize: vertical;
+    max-height: 300px;
+    min-height: 100px;
+    vertical-align: middle;
+}
+
+#enviar {
+    width: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    background-color: #7251b5;
+    font-family: 'Roboto', sans-serif;
+    color: #DBDBDB;
+    font-weight: bolder;
+    font-size: 15px;
+    border: none;
+}
+
+#enviar:hover {
+    background: #9163cb;
+    cursor: pointer;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #7251b5;
+}
+
+/* == STYLE SOLO DE CONTACTO ==*/
+
+
+/* == STYLE SOLO DE FOTOS == */
+
+.flamenco {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.flamenco div {
+    padding: 10px;
+}
+
+.belly {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.belly div {
+    padding: 10px;
+}
+
+.jazz {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.jazz div {
+    padding: 10px;
+}
+
+.tap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tap div {
+    padding: 10px;
+}
+
+.fotos {
+    border-radius: 2px;
+    border: solid #DBDBDB;
+    transition: transform 1s;
+}
+
+.fotos:hover {
+    transform: scale(1.1);
+}
+
