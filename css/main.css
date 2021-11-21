@@ -13,6 +13,7 @@ body {
 
 header {
     grid-area: header;
+    background-color: #DBDBDB;
 }
 
 nav {
@@ -27,37 +28,8 @@ footer {
     grid-area: footer;
 }
 
-
-.titulo {
-    color: #261132;
-    font-family: 'Great Vibes', cursive;
-    text-align: center;
-    vertical-align: text-top;
-    font-size: 150px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-color: #DBDBDB;
-    border-width: 0px 0px 0px 0px;
-    border-style: solid;
-    margin: 0px;
-}
-
-.title {
-    background-color: #DBDBDB;
-    background-position: center center;
-    background-repeat: no-repeat;
-    padding: 0px 0px 0px 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    border-width: 0px 0px 0px 0px;
-    border-color: #DBDBDB;
-    border-style: solid;
-}
-
-
 nav {
     background-color: #DBDBDB;
-    opacity: 0.75;
 
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
@@ -66,7 +38,9 @@ nav {
     letter-spacing: 0.7px;
 }
 
-
+.navbar-brand {
+    background-color: #DBDBDB;
+}
 
 .nav-item:hover {
     color: #7251b5;
@@ -104,9 +78,6 @@ nav {
     height: 50px;
 }
 
-
-
-
 /* == ESTILO GENERAL APLICA A TODO == */
 
 
@@ -140,27 +111,6 @@ nav {
 
 
 /* == STYLE SOLO DE BIOGRAFIA ==*/
-
-.biografia {
-    display: flex;
-    flex-direction: row;
-}
-
-.foto-bio {
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-}
-.foto-bio img {
-    width: 450px;
-    border-radius: 15px;
-    border: 5px solid #DBDBDB;
-}
-
-.bio {
-    margin-right: 20px;
-}
-
 .texto {
     color:#DBDBDB;
     font-family: 'Roboto', sans-serif;
@@ -170,7 +120,11 @@ nav {
     line-height: 30px;
 }
 
-/* == STYLE SOLO DE HOME ==*/
+.arabe {
+    border-radius: 15px;
+}
+
+/* == STYLE SOLO DE BIOGRAFIA ==*/
 
 
 /* == STYLE SOLO DE VIDEOS ==*/
