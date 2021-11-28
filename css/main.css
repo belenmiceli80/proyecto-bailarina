@@ -78,6 +78,16 @@ nav {
     height: 50px;
 }
 
+.titulo {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+h1 {
+    color: #DBDBDB;
+    font-family: 'Parisienne', cursive;
+    font-size: 50px;
+}
+
 /* == ESTILO GENERAL APLICA A TODO == */
 
 
@@ -204,68 +214,4 @@ input:focus, textarea:focus {
 
 /* == STYLE SOLO DE CONTACTO ==*/
 
-
-/* == STYLE SOLO DE FOTOS == */
-
-.flamenco {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-
-.flamenco div {
-    padding: 10px;
-}
-
-.belly {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.belly div {
-    padding: 10px;
-}
-
-.jazz {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.jazz div {
-    padding: 10px;
-}
-
-.tap {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.tap div {
-    padding: 10px;
-}
-
-.fotos {
-    border-radius: 2px;
-    border: solid #DBDBDB;
-    transition: transform 1s;
-}
-
-.fotos:hover {
-    transform: scale(1.1);
-}
 
